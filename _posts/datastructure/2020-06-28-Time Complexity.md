@@ -48,5 +48,5 @@ The example 2 is an algorithm to get a list, increase 1 into every element in th
 어떤 알고리즘의 수행시간이 T(n) = 3n + 4일 경우 이를 O(n)으로 표기하는 건 맞으나, T(n) = 3n + 4 = O(n)이라고 하는건 옳지 않다.  
 When the time complexity is T(n) = 3n + 4, we can say it T(n) is O(n), but T(n) = O(n) is incorrect.  
 
-![Expected Times](icehongsi.github.io/blob/master/assets/img/timecomplexity.png)
+![Expected Times](https://user-images.githubusercontent.com/52072412/85954681-343ebc80-b9b4-11ea-905f-4eaf7f5b3b61.png)
 
