@@ -1,0 +1,48 @@
+---
+layout: post
+title: 큐 (Queue)
+cover-img: /assets/img/path.jpg
+use_math: true
+gh-repo: daattali/beautiful-jekyll
+---
+
+#### **2. Queue**
+
+앞서 말한 후입선출 (Last in First out) 구조의 스택과는 다르게 큐는 FIFO(First in First out) 형태의 규칙을 따르고 있습니다.  
+마치 지하철이 올 때, 첫 번째 칸이 제일 처음 역에 도달하게 되는 것처럼, 아니면 여권 심사를 받을 때 먼저 줄을 선 사람이 먼저 심사를 받는 것처럼 큐 역시 제일 먼저 들어간 데이터가 제일 나중에 나옵니다.  
+큐 역시 스택과 같이 세 가지의 기본적인 메소드를 가지고 있습니다.  
+
+ * 1. Enqueue: 큐의 맨 뒤에 새로운 데이터를 삽입합니다.
+ * 2. Dequeue: 가장 먼저 들어갔던 데이터를 삭제한 후 해당 값을 돌려줍니다.  
+ * 3. Peek: 가장 먼저 들어갔던 데이터의 값을 돌려줍니다.  
+ * 기타 메소드: isempty (큐가 비었는지 확인) 등  
+ 
+ ~~~python
+class Queue:
+  def __init__(self, limit = 10):
+    self.queue = []
+    self.limit = limit
+    self.length = 0
+  def isempty(self):
+    if self.length == 0:
+      return True
+     else:
+      return False
+  def enqueue(self, value):
+    if self.length >= self.limit:
+      print("Queue is Full!")
+    else:
+      enqueue.append(value)
+  def dequeue(self):
+    if self.isempty():
+      print("Queue is Empty!")
+    else:
+      return self.queue.pop(0)
+  def peek(self):
+    if self.isempty():
+      print("Queue is Empty!")
+    else:
+      return self.queue[0]
+ ~~~
+ 
+ 
